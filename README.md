@@ -18,12 +18,8 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic weather --fr
 
 
 You will see something like this if everything is working correctly:
-[2016-05-31 14:38:37,177] INFO Registered kafka:type=producer,host=localhost,port=49156
-[2016-05-   31 14:38:37,182] INFO Created topic my-topic with 1 partition(s), replication factor 1 and 1 brokers in cluster.    
-[2016-05-31 14:38:37,183] INFO Produced message to topic my-topic partition 0 at offset  0
-[2016-05-   31 14:38:38,188] INFO Produced message to topic my-topic partition 0 at offset  1
+Topic weather has received your message. Delivery Successful | Offset 120001
+Topic weather has received your message. Delivery Successful | Offset 120002
+Topic weather has received your message. Delivery Successful | Offset 120003
 ...
 
-In another terminal window, run the consumer again but with --from-file instead of --from-beginning and provide it with the filename
-In another terminal window, run the consumer again but with `--from-file` instead of `--from-beginning`. This time it should print out
-In another terminal window, run the consumer again but with --from-file instead of --from-beginning and provide it with a file containing some
